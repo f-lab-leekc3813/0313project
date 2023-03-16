@@ -1,0 +1,171 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-color: #ffafcc; 
+    text-align: center;
+    
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inform {
+    margin: 35px 0;
+}
+h2 {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 20px 0;
+}
+p {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricing {
+    padding: 0px 25px 50px;
+    margin: 0 30px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pricing-plan {
+    width: 100%;
+    margin: 8px 0;
+    padding: 14px; 
+    background-color: #fff;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.free-duration {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    padding: 3px 6px;
+    background-color: #073b4c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.pricing-header {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.pricing-header-sub {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    border-bottom: 1.5px solid #f28482;
+}
+
+.pricing-features {
+    height: 200px;
+    margin: 35px 5px 15px;
+    text-align: left;
+}
+.pricing-features li {
+    font-size: 16px;
+    line-height: 2;
+}
+.tos {
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.pricing-button {
+    margin: 15px 0;
+    width: 77%;
+    padding: 15px 30px;
+    background-color: #073b4c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: scale 1s ease-in-out;
+}
+
+.pricing-button:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 900px){
+    
+    .pricing {
+        flex-direction: row;
+        align-items: start;
+    }
+    .pricing-plan {
+    
+        margin-right: 15px;
+        
+    }   
+}
